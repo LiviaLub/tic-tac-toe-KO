@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tic Tac Toe KO</title>
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="ko.css">
+    </head>
+    <body>
+      <br>
+      <h1>Tic Tac Toe</h1>
+      <div class="gameboard" data-bind="with: gameBoard">
+            <div class="row" id="top" data-bind="foreach: topRow">
+                <span data-bind="text: state, click: $parents[1].makeMove"></span>
+            </div>
+            <div class="row" id="middle" data-bind="foreach: middleRow">
+                <span data-bind="text: state, click: $parents[1].makeMove"></span>
+            </div>
+            <div class="row" id="bottom"data-bind="foreach: bottomRow">
+                <span data-bind="text: state, click: $parents[1].makeMove"></span>
+            </div>
+        </div>
+        <div data-bind="with: gameBoard">
+            <span class="gamestatus" data-bind="text: gameStatus"></span>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.2.0/knockout-min.js"></script>
+
+        <script type="text/javascript" src="test.js"></script>
+    </body>
+</html>

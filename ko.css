@@ -1,0 +1,24 @@
+h1{  color:#b72f2f;
+  text-align: center;
+  font-family: "Arial Rounded MT Bold";
+
+  }
+.gameboard{
+  font-size: 50px;
+  padding-top: 20px;
+  padding-right: 90px;
+  padding-left: 90px;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Arial Rounded MT Bold";
+}
+.gamestatus{
+  color:blue;
+  text-align: center;
+  font-family: "Arial Rounded MT Bold";
+  font-size: 20px;
+  margin-left: 670px;
+  margin-top:  330px;
+  
+
+}
