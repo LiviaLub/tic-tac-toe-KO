@@ -1,6 +1,5 @@
 function GridSquare(column, row) {
     this.state = ko.observable('__ ');
-
     this.row = row;
     this.column = column;
 }
